@@ -1,0 +1,54 @@
+:root {
+  --moon-dust: #f9efe4;
+  --moon-dust-lighter: #fdf9f4;
+  --moon-dust-darker: #f0e4d6;
+  --saturn-orange: #f67748;
+  --saturn-orange-lighter: #ffbda6;
+  --dark: #2f2f30;
+  --grey: #98999a;
+  --whatsapp: #25D366;
+  --whatsapp-dark: #128C7E;
+}
+
+body {
+  background-color: var(--moon-dust-lighter);
+  color: var(--dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tab-active {
+  background: var(--saturn-orange);
+  color: #fff !important;
+  border-radius: 50px;
+}
+
+.wavy-top {
+  border-radius: 60px 60px 0 0;
+}
+
+.hero-shadow {
+  box-shadow: 0px 4px 24px rgba(0,0,0,0.07), 0px 1px 4px rgba(0,0,0,0.04);
+}
+
+.card-shadow {
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.04), 0px 2px 6px rgba(0,0,0,0.04);
+}
+
+.wa-bubble-in {
+  background: #fff;
+  border-radius: 0 12px 12px 12px;
+}
+
+.wa-bubble-out {
+  background: #dcf8c6;
+  border-radius: 12px 0 12px 12px;
+}
+
+.slack-card {
+  background: #fff;
+  border-left: 3px solid #e01e5a;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 12px;
+  font-size: 11px;
+}
