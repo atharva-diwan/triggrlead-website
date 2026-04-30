@@ -138,6 +138,8 @@
     const formWrap = document.getElementById('form-wrap');
     const successWrap = document.getElementById('success-wrap');
 
+    const WEBHOOK_URL = 'https://n8n.srv1112057.hstgr.cloud/webhook/fe1743f9-cec3-4979-a212-011d96e77647';
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       errEl.classList.add('hidden');
@@ -151,9 +153,16 @@
         company_website: document.getElementById('company_website').value.trim(),
       };
 
-      const { error } = await supabase.from('audit_requests').insert(payload);
+      const [dbResult] = await Promise.allSettled([
+        supabase.from('audit_requests').insert(payload),
+        fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        }),
+      ]);
 
-      if (error) {
+      if (dbResult.status === 'rejected' || dbResult.value?.error) {
         errEl.textContent = 'Something went wrong. Please try again or email us directly.';
         errEl.classList.remove('hidden');
         submitBtn.disabled = false;
