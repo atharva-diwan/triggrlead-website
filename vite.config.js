@@ -7,6 +7,7 @@ export default defineConfig({
         main: 'index.html',
         privacy: 'privacy.html',
         terms: 'terms.html',
+        audit: 'audit.html',
       }
     }
   }
