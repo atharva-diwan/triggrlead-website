@@ -104,11 +104,12 @@
           </svg>
         </div>
         <h2 class="text-[24px] md:text-[28px] font-bold text-brand mb-3" style="letter-spacing:-0.015em;line-height:1.25;">
-          Thank you
+          Request received!
         </h2>
-        <p class="text-[14px] text-muted leading-relaxed mb-8 max-w-sm mx-auto">
-          Your audit report will be delivered within 24 hours.
+        <p class="text-[14px] text-muted leading-relaxed mb-2 max-w-sm mx-auto">
+          Your custom automation audit report is being prepared and will be sent to <strong id="confirmed-email" class="text-brand"></strong> within 24 hours.
         </p>
+        <p class="text-[13px] text-muted mb-8">Check your inbox (and spam, just in case).</p>
         <a href="index.html"
           class="inline-flex items-center gap-2 px-6 py-2.5 border border-md-dark text-brand text-[13px] font-medium rounded-full hover:border-brand/30 transition-colors">
           Back to home
@@ -170,6 +171,7 @@
         return;
       }
 
+      document.getElementById('confirmed-email').textContent = payload.email;
       formWrap.classList.add('hidden');
       successWrap.classList.remove('hidden');
       window.scrollTo({ top: 0, behavior: 'smooth' });
