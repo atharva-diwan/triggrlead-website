@@ -1,18 +1,31 @@
 :root {
-  --moon-dust: #f9efe4;
-  --moon-dust-lighter: #fdf9f4;
-  --moon-dust-darker: #f0e4d6;
-  --saturn-orange: #f67748;
-  --saturn-orange-lighter: #ffbda6;
-  --dark: #2f2f30;
-  --grey: #98999a;
+  --color-bg: #F5F0EB;
+  --color-surface: #EDE8E0;
+  --color-card: #FFFFFF;
+  --color-divider: #DDD8D0;
+  --color-dark-1: #1A1916;
+  --color-dark-2: #242220;
+  --color-text: #1A1916;
+  --color-muted: #7A7570;
+  --color-text-inv: #F5F0EB;
+  --color-accent: #E8793A;
+  --color-accent-hover: #D4662A;
+
+  /* legacy aliases */
+  --moon-dust: var(--color-surface);
+  --moon-dust-lighter: var(--color-bg);
+  --moon-dust-darker: var(--color-divider);
+  --saturn-orange: var(--color-accent);
+  --saturn-orange-lighter: #f5b094;
+  --dark: var(--color-text);
+  --grey: var(--color-muted);
   --whatsapp: #25D366;
   --whatsapp-dark: #128C7E;
 }
 
 body {
-  background-color: var(--moon-dust-lighter);
-  color: var(--dark);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

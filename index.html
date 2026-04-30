@@ -17,13 +17,16 @@
       theme: {
         extend: {
           colors: {
-            'md': '#f9efe4',
-            'md-light': '#fdf9f4',
-            'md-dark': '#f0e4d6',
-            'sorg': '#f67748',
-            'sorg-light': '#ffbda6',
-            'brand': '#2f2f30',
-            'muted': '#98999a',
+            'md': '#EDE8E0',
+            'md-light': '#F5F0EB',
+            'md-dark': '#DDD8D0',
+            'sorg': '#E8793A',
+            'sorg-hover': '#D4662A',
+            'sorg-light': '#f5b094',
+            'brand': '#1A1916',
+            'muted': '#7A7570',
+            'dark-1': '#1A1916',
+            'dark-2': '#242220',
             'wa': '#25D366',
             'wa-dark': '#128C7E',
           }
@@ -76,7 +79,7 @@
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-4 reveal">
         <a href="audit.html"
-          class="btn-lift px-6 py-2.5 bg-brand text-white text-[13px] font-semibold rounded-full">
+          class="btn-lift px-6 py-2.5 bg-sorg text-white text-[13px] font-semibold rounded-full hover:bg-sorg-hover">
           Get Your Free Audit Report
         </a>
         <a href="https://cal.com/atharva-diwan/discovery-call-15min" target="_blank"
@@ -88,9 +91,9 @@
   </section>
 
   <!-- ── SERVICES — JS TAB SWITCHER ── -->
-  <section class="py-20 px-6" id="features">
+  <section class="py-20 px-6 bg-md" id="features">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="font-display text-[36px] md:text-[46px] text-brand mb-2 reveal">What We Automate for <span class="italic text-sorg">Your Firm</span></h2>
+      <h2 class="font-display text-[36px] md:text-[46px] text-brand mb-2 reveal">What We Automate for <span class="italic">Your Firm</span></h2>
       <p class="text-[13px] text-muted mb-8">Six engines. Every back-office workflow — live within 90 days.</p>
 
       <!-- Tab buttons -->
@@ -154,7 +157,7 @@
   </section>
 
   <!-- ── GUARANTEE ── -->
-  <section class="py-20 px-6 relative overflow-hidden wavy-top mt-8" id="guarantee" style="background-color:#232323;">
+  <section class="py-20 px-6 relative overflow-hidden wavy-top mt-8" id="guarantee" style="background-color:#1A1916;">
     <div class="absolute top-10 right-20 w-32 h-32 rounded-full bg-wa/5 blur-2xl pointer-events-none"></div>
     <div class="absolute bottom-10 left-10 w-40 h-40 rounded-full bg-sorg/5 blur-2xl pointer-events-none"></div>
     <div class="absolute top-1/3 left-1/2 w-3 h-3 rounded-full bg-white/10 pointer-events-none"></div>
@@ -166,13 +169,13 @@
         <h2 class="font-display text-[34px] md:text-[44px] text-white mb-4"
           style="line-height:1.05;">
           The 80% Autonomy<br>
-          <span class="text-sorg italic">Guarantee.</span>
+          <span class="italic">Guarantee.</span>
         </h2>
         <div class="flex items-center gap-5 mb-5">
           <div class="relative w-20 h-20 flex-shrink-0">
             <svg class="progress-ring w-20 h-20" viewBox="0 0 100 100">
               <circle cx="50" cy="50" r="45" stroke="rgba(255,255,255,0.08)" stroke-width="6" fill="none"/>
-              <circle class="progress-ring__circle" cx="50" cy="50" r="45" stroke="#f67748" stroke-width="6" fill="none"/>
+              <circle class="progress-ring__circle" cx="50" cy="50" r="45" stroke="#E8793A" stroke-width="6" fill="none"/>
             </svg>
             <div class="absolute inset-0 flex items-center justify-center">
               <span class="font-display text-white text-[22px]">80%</span>
@@ -184,34 +187,34 @@
           If we miss that threshold on any module — we continue building at no additional charge until it's achieved. No time limit. No asterisks. You don't pay more than you gain.
         </p>
         <a href="https://cal.com/atharva-diwan/discovery-call-15min" target="_blank"
-          class="btn-lift inline-flex items-center gap-2 px-6 py-2.5 bg-sorg text-white text-[13px] font-semibold rounded-full">
+          class="inline-flex items-center gap-2 px-6 py-2.5 border border-white/30 text-white text-[13px] font-semibold rounded-full hover:bg-white/10 transition-colors">
           Explore the guarantee <span aria-hidden="true">&rarr;</span>
         </a>
       </div>
       <div class="grid grid-cols-2 gap-3 reveal">
         <div class="card-lift bg-white/5 rounded-xl p-5 border border-white/[0.08]">
-          <div class="text-sorg mb-3">
+          <div class="text-white/80 mb-3">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
           </div>
           <p class="text-[12px] font-semibold text-white mb-1">80% autonomy threshold</p>
           <p class="text-[11px] text-muted">Achieved within 90 days</p>
         </div>
         <div class="card-lift bg-white/5 rounded-xl p-5 border border-white/[0.08]">
-          <div class="text-sorg mb-3">
+          <div class="text-white/80 mb-3">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
           </div>
           <p class="text-[12px] font-semibold text-white mb-1">No lock-in</p>
           <p class="text-[11px] text-muted">Cancel anytime, zero retainer</p>
         </div>
         <div class="card-lift bg-white/5 rounded-xl p-5 border border-white/[0.08]">
-          <div class="text-sorg mb-3">
+          <div class="text-white/80 mb-3">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
           </div>
           <p class="text-[12px] font-semibold text-white mb-1">Your data, always</p>
           <p class="text-[11px] text-muted">Stays in your Google or M365 tenant</p>
         </div>
         <div class="card-lift bg-white/5 rounded-xl p-5 border border-white/[0.08]">
-          <div class="text-sorg mb-3">
+          <div class="text-white/80 mb-3">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
           </div>
           <p class="text-[12px] font-semibold text-white mb-1">Work free if we miss</p>
@@ -222,48 +225,40 @@
   </section>
 
   <!-- ── HOW IT WORKS ── -->
-  <section class="py-20 px-6" id="how-it-works" style="background-color:#232323;">
+  <section class="py-20 px-6 bg-md-light" id="how-it-works">
     <div class="max-w-4xl mx-auto text-center">
-      <p class="text-[10px] font-semibold text-muted uppercase tracking-widest mb-3">The process</p>
-      <h2 class="font-display text-[34px] md:text-[44px] text-white mb-12">How It <span class="italic text-sorg">Works</span></h2>
+      <p class="text-[10px] font-semibold text-muted uppercase tracking-widest mb-3 reveal">The process</p>
+      <h2 class="font-display text-[34px] md:text-[44px] text-brand mb-12 reveal">How It <span class="italic">Works</span></h2>
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="text-left">
-          <div
-            class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-[12px] font-bold text-white mb-4">
-            01</div>
-          <h3 class="text-[14px] font-semibold text-white mb-2">Free Audit Report</h3>
-          <p class="text-[12px] text-muted leading-relaxed">Reply 'AUDIT' and we send you a free breakdown of exactly which processes we'd automate first for your firm — and the step-by-step action plan to implement it. No cost, no obligation.</p>
+        <div class="text-left reveal">
+          <div class="font-display text-[40px] text-brand/20 leading-none mb-2">01</div>
+          <h3 class="text-[14px] font-semibold text-brand mb-2">Free Audit Report</h3>
+          <p class="text-[12px] text-muted leading-relaxed">Reply 'AUDIT' and we send you a free breakdown of exactly which processes we'd automate first for your firm &mdash; and the step-by-step action plan to implement it. No cost, no obligation.</p>
         </div>
-        <div class="text-left">
-          <div
-            class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-[12px] font-bold text-white mb-4">
-            02</div>
-          <h3 class="text-[14px] font-semibold text-white mb-2">15-Minute Discovery Call</h3>
-          <p class="text-[12px] text-muted leading-relaxed">Walk us through one specific process that's eating your team's time. We'll map out exactly how to automate it — live on the call, free.</p>
+        <div class="text-left reveal">
+          <div class="font-display text-[40px] text-brand/20 leading-none mb-2">02</div>
+          <h3 class="text-[14px] font-semibold text-brand mb-2">15-Minute Discovery Call</h3>
+          <p class="text-[12px] text-muted leading-relaxed">Walk us through one specific process that's eating your team's time. We'll map out exactly how to automate it &mdash; live on the call, free.</p>
         </div>
-        <div class="text-left">
-          <div
-            class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-[12px] font-bold text-white mb-4">
-            03</div>
-          <h3 class="text-[14px] font-semibold text-white mb-2">Phased Build — Revenue First</h3>
+        <div class="text-left reveal">
+          <div class="font-display text-[40px] text-brand/20 leading-none mb-2">03</div>
+          <h3 class="text-[14px] font-semibold text-brand mb-2">Phased Build &mdash; Revenue First</h3>
           <p class="text-[12px] text-muted leading-relaxed">We start with your Revenue Engine. Lead qualification, follow-ups, and onboarding go live within 30 days. You see working software in month one, not month four.</p>
         </div>
-        <div class="text-left">
-          <div
-            class="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center text-[12px] font-bold text-white mb-4">
-            04</div>
-          <h3 class="text-[14px] font-semibold text-white mb-2">Full Autonomous OS</h3>
-          <p class="text-[12px] text-muted leading-relaxed">Operations, payments, client success, and internal agents roll out across 90 days. The system wraps around your existing tools — nothing changes for your team.</p>
+        <div class="text-left reveal">
+          <div class="font-display text-[40px] text-brand/20 leading-none mb-2">04</div>
+          <h3 class="text-[14px] font-semibold text-brand mb-2">Full Autonomous OS</h3>
+          <p class="text-[12px] text-muted leading-relaxed">Operations, payments, client success, and internal agents roll out across 90 days. The system wraps around your existing tools &mdash; nothing changes for your team.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ── TESTIMONIAL ── -->
-  <section class="py-24 px-6" id="proof">
+  <section class="py-28 px-6 bg-md" id="proof">
     <div class="max-w-4xl mx-auto text-center">
       <p class="text-[10px] font-semibold text-muted uppercase tracking-widest mb-3 reveal">What clients say</p>
-      <h2 class="font-display text-[34px] md:text-[44px] text-brand mb-12 reveal">Real results from <span class="italic text-sorg">real engagements.</span></h2>
+      <h2 class="font-display text-[34px] md:text-[44px] text-brand mb-12 reveal">Real results from <span class="italic">real engagements.</span></h2>
       <div class="max-w-2xl mx-auto reveal">
         <p class="font-display italic text-brand text-[22px] md:text-[26px] leading-[1.4] mb-8">
           &ldquo;We reduced manual effort by 70&ndash;80%, and tasks that earlier took hours now take 10 minutes. His ability to combine technical expertise with a strong understanding of our business needs made the solutions both practical and high-impact.&rdquo;
@@ -317,7 +312,7 @@
   <!-- ── FAQ ── -->
   <section class="py-20 px-6" id="faq">
     <div class="max-w-2xl mx-auto">
-      <h2 class="font-display text-[34px] md:text-[44px] text-brand text-center mb-12 reveal">Frequently Asked <span class="italic text-sorg">Questions</span></h2>
+      <h2 class="font-display text-[34px] md:text-[44px] text-brand text-center mb-12 reveal">Frequently Asked <span class="italic">Questions</span></h2>
       <div class="reveal">
         <div class="faq-item">
           <button class="faq-question" type="button">
@@ -359,18 +354,18 @@
   </section>
 
   <!-- ── CTA ── -->
-  <section class="py-20 px-6" id="cta">
+  <section class="py-20 px-6 bg-md" id="cta">
     <div class="max-w-2xl mx-auto text-center">
-      <div class="bg-md rounded-3xl p-10 border border-md-dark/40">
+      <div class="bg-md-light rounded-3xl p-10 border border-md-dark/40">
         <p class="text-[10px] font-semibold text-muted uppercase tracking-widest mb-3">Get started free</p>
         <h2 class="font-display text-[32px] md:text-[42px] text-brand mb-3" style="line-height:1.05;">
-          See It Work,<br><span class="italic text-sorg">Before You Commit</span>
+          See It Work,<br><span class="italic">Before You Commit</span>
         </h2>
         <p class="text-[13px] text-muted leading-relaxed mb-7 max-w-md mx-auto">
           Reply 'AUDIT' and we'll send you a free report: a live breakdown of exactly which processes we'd automate for your firm, the tools we'd use, and a step-by-step action plan you can implement yourself or hand to anyone. No pitch. No obligation. Just proof.
         </p>
         <a href="audit.html"
-          class="btn-lift inline-flex items-center gap-2 px-8 py-3 bg-brand text-white text-[13px] font-semibold rounded-full">
+          class="btn-lift inline-flex items-center gap-2 px-8 py-3 bg-sorg text-white text-[13px] font-semibold rounded-full hover:bg-sorg-hover">
           Get Your Free Audit Report
         </a>
         <p class="text-[11px] text-muted mt-4">

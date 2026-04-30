@@ -17,13 +17,14 @@
       theme: {
         extend: {
           colors: {
-            'md': '#f9efe4',
-            'md-light': '#fdf9f4',
-            'md-dark': '#f0e4d6',
-            'sorg': '#f67748',
-            'sorg-light': '#ffbda6',
-            'brand': '#2f2f30',
-            'muted': '#98999a',
+            'md': '#EDE8E0',
+            'md-light': '#F5F0EB',
+            'md-dark': '#DDD8D0',
+            'sorg': '#E8793A',
+            'sorg-hover': '#D4662A',
+            'sorg-light': '#f5b094',
+            'brand': '#1A1916',
+            'muted': '#7A7570',
             'wa': '#25D366',
             'wa-dark': '#128C7E',
           }
@@ -62,7 +63,7 @@
       <div id="form-wrap" class="card-shadow bg-white rounded-3xl p-8 md:p-10 border border-md-dark/40">
         <p class="text-[10px] font-semibold text-muted uppercase tracking-widest mb-3">Free audit report</p>
         <h1 class="font-display text-[32px] md:text-[42px] text-brand mb-3" style="line-height:1.05;">
-          Get your firm's <span class="italic text-sorg">custom automation audit</span>
+          Get your firm's <span class="italic">custom automation audit</span>
         </h1>
         <p class="text-[13px] text-muted leading-relaxed mb-8">
           Tell us a bit about your firm and we'll send you a free breakdown of exactly which processes to automate first, the tools we'd use, and a step-by-step action plan.
@@ -93,7 +94,7 @@
           <p id="form-error" class="hidden text-[12px] text-red-500"></p>
 
           <button type="submit" id="submit-btn"
-            class="w-full px-6 py-3 bg-brand text-white text-[13px] font-semibold rounded-full hover:bg-brand/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
+            class="w-full px-6 py-3 bg-sorg text-white text-[13px] font-semibold rounded-full hover:bg-sorg-hover transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
             Request my audit report
           </button>
           <p class="text-[11px] text-muted text-center">We respond within 24 hours. No spam, ever.</p>
