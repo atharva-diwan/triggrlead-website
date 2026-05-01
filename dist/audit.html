@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Your Free Audit Report — TriggrLead</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon-DNrf4FJs.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'md': '#EDE8E0',
+            'md-light': '#F5F0EB',
+            'md-dark': '#DDD8D0',
+            'sorg': '#E8793A',
+            'sorg-hover': '#D4662A',
+            'sorg-light': '#f5b094',
+            'brand': '#1A1916',
+            'muted': '#7A7570',
+            'wa': '#25D366',
+            'wa-dark': '#128C7E',
+          }
+        }
+      }
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/audit-D05FxME_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-3yushUSf.css">
+</head>
+
+<body class="bg-md-light">
+
+  <!-- ── NAV ── -->
+  <nav class="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 h-[54px] flex items-center justify-between">
+      <div class="flex items-center gap-8">
+        <a href="index.html" class="flex items-center gap-1.5 text-white font-semibold text-[15px] tracking-tight">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"
+              fill="#25D366" />
+          </svg>
+          TriggrLead
+        </a>
+      </div>
+      <div class="flex items-center">
+        <a href="index.html"
+          class="text-[13px] text-white/60 hover:text-white transition-colors">
+          ← Back to home
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── FORM ── -->
+  <section class="pt-16 pb-20 px-6">
+    <div class="max-w-xl mx-auto">
+      <div id="form-wrap" class="card-shadow bg-white rounded-3xl p-8 md:p-10 border border-md-dark/40">
+        <p class="text-[10px] font-semibold text-muted uppercase tracking-widest mb-3">Free audit report</p>
+        <h1 class="font-display text-[32px] md:text-[42px] text-brand mb-3" style="line-height:1.05;">
+          Get your firm's <span class="italic">custom automation audit</span>
+        </h1>
+        <p class="text-[13px] text-muted leading-relaxed mb-8">
+          Tell us a bit about your firm and we'll send you a free breakdown of exactly which processes to automate first, the tools we'd use, and a step-by-step action plan.
+        </p>
+
+        <form id="audit-form" class="space-y-5">
+          <div>
+            <label for="name" class="block text-[12px] font-semibold text-brand mb-1.5">Your name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-2.5 text-[13px] text-brand bg-md-light border border-md-dark rounded-xl focus:outline-none focus:border-sorg transition-colors" />
+          </div>
+          <div>
+            <label for="company_name" class="block text-[12px] font-semibold text-brand mb-1.5">Company name</label>
+            <input type="text" id="company_name" name="company_name" required
+              class="w-full px-4 py-2.5 text-[13px] text-brand bg-md-light border border-md-dark rounded-xl focus:outline-none focus:border-sorg transition-colors" />
+          </div>
+          <div>
+            <label for="email" class="block text-[12px] font-semibold text-brand mb-1.5">Email address</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-2.5 text-[13px] text-brand bg-md-light border border-md-dark rounded-xl focus:outline-none focus:border-sorg transition-colors" />
+          </div>
+          <div>
+            <label for="company_website" class="block text-[12px] font-semibold text-brand mb-1.5">Company website</label>
+            <input type="url" id="company_website" name="company_website" required placeholder="https://"
+              class="w-full px-4 py-2.5 text-[13px] text-brand bg-md-light border border-md-dark rounded-xl focus:outline-none focus:border-sorg transition-colors" />
+          </div>
+
+          <p id="form-error" class="hidden text-[12px] text-red-500"></p>
+
+          <button type="submit" id="submit-btn"
+            class="w-full px-6 py-3 bg-sorg text-white text-[13px] font-semibold rounded-full hover:bg-sorg-hover transition-colors disabled:opacity-60 disabled:cursor-not-allowed">
+            Request my audit report
+          </button>
+          <p class="text-[11px] text-muted text-center">We respond within 24 hours. No spam, ever.</p>
+        </form>
+      </div>
+
+      <div id="success-wrap" class="hidden card-shadow bg-white rounded-3xl p-10 border border-md-dark/40 text-center">
+        <div class="w-14 h-14 rounded-full bg-wa/15 flex items-center justify-center mx-auto mb-5">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <path d="M5 13l4 4L19 7" stroke="#128C7E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2 class="text-[24px] md:text-[28px] font-bold text-brand mb-3" style="letter-spacing:-0.015em;line-height:1.25;">
+          Request received!
+        </h2>
+        <p class="text-[14px] text-muted leading-relaxed mb-2 max-w-sm mx-auto">
+          Your custom automation audit report is being prepared and will be sent to <strong id="confirmed-email" class="text-brand"></strong> within 24 hours.
+        </p>
+        <p class="text-[13px] text-muted mb-8">Check your inbox (and spam, just in case).</p>
+        <a href="index.html"
+          class="inline-flex items-center gap-2 px-6 py-2.5 border border-md-dark text-brand text-[13px] font-medium rounded-full hover:border-brand/30 transition-colors">
+          Back to home
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="py-10 px-6 bg-black text-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-[11px] text-white/60">© 2025 TriggrLead. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
