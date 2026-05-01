@@ -31,8 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(el => io.observe(el));
+    }, { threshold: 0.05, rootMargin: '0px 0px 0px 0px' });
+    revealEls.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('visible');
+      } else {
+        io.observe(el);
+      }
+    });
   } else {
     revealEls.forEach(el => el.classList.add('visible'));
   }
